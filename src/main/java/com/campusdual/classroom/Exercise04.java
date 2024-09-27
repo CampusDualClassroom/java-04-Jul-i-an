@@ -10,21 +10,56 @@ public class Exercise04 {
         System.out.println("######################################################################");
         System.out.println("Ejemplos de cálculos CON estructuras de control:");
 
+        System.out.println("Valor de suma es " + sumNum(5));
+        System.out.println("Valor de suma es " + sumEvenNum(20));
+        System.out.println("Valor de suma es " + factorial(7));
+        System.out.println("Valor de suma es " + recursiveFactorial(7));
     }
 
     public static int sumNum(int num) {
-        return 0;
+
+        int suma = 0;
+
+        for (int i = 0; i <= num; i++){
+            suma += i;
+        }
+
+        return suma;
     }
 
     public static int sumEvenNum(int num) {
-        return 0;
+        // El método sumEvenNum() recibe un número entero por parámetro. El método calculará la suma de los primeros números enteros pares que se solicite en el parámetro.
+        int suma = 0;
+        int contador = 0;
+        int salir = 0;
+
+        while (salir <= num) {
+            if ((contador%2==0)){
+                suma += contador;
+                salir ++;
+            }
+            contador ++;
+        }
+
+        return suma;
     }
 
     public static int factorial(int num) {
-        return 0;
+        // El método factorial() recibe un número entero por parámetro. El método calculará el factorial del número que se solicite en el parámetro.
+        int suma = 1;
+        int contador = num;
+        while (1  <= contador) {
+                suma = suma * contador;
+            contador --;
+        }
+        return suma;
     }
 
     public static int recursiveFactorial(int num) {
-        return 0;
+        // El método recursiveFactorial() recibe un número entero por parámetro. El método hará la misma operación que el método factorial() pero sirviéndose de la recursividad, es decir, invocándose a sí mismo (buscar información sobre recursividad).
+        if (num != 0)
+            return num * factorial(num-1);
+        else
+            return 1;
     }
 }
