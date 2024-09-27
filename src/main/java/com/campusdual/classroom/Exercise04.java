@@ -28,7 +28,6 @@ public class Exercise04 {
     }
 
     public static int sumEvenNum(int num) {
-        // El método sumEvenNum() recibe un número entero por parámetro. El método calculará la suma de los primeros números enteros pares que se solicite en el parámetro.
         int suma = 0;
         int contador = 0;
         int salir = 0;
@@ -45,7 +44,6 @@ public class Exercise04 {
     }
 
     public static int factorial(int num) {
-        // El método factorial() recibe un número entero por parámetro. El método calculará el factorial del número que se solicite en el parámetro.
         int suma = 1;
         int contador = num;
         while (1  <= contador) {
@@ -56,7 +54,6 @@ public class Exercise04 {
     }
 
     public static int recursiveFactorial(int num) {
-        // El método recursiveFactorial() recibe un número entero por parámetro. El método hará la misma operación que el método factorial() pero sirviéndose de la recursividad, es decir, invocándose a sí mismo (buscar información sobre recursividad).
         if (num != 0)
             return num * factorial(num-1);
         else
